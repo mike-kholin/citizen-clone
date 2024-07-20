@@ -20,11 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <SessionWrapper>
-        <Theme>
-          <body className={inter.className}>
-            <Container>{children}</Container>
-          </body>
-        </Theme>
+        <body className={inter.className}>
+          <Theme>{children}</Theme>
+        </body>
       </SessionWrapper>
     </html>
   );
